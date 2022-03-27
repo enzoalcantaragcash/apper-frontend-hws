@@ -8,7 +8,7 @@ function isPalindrome(stringToTest) {
     const tempArray = stringToTest.split("")
     const reversedStringToTest = tempArray.reverse().join("")
 
-	if (stringToTest === reversedStringToTest) {
+	if (stringToTest.toLowerCase() === reversedStringToTest.toLowerCase()) {
 		return true
 	}
 
@@ -16,9 +16,8 @@ function isPalindrome(stringToTest) {
 }
 
 console.log("deified :" + isPalindrome("deified"))
-console.log("=====")
-console.log("racecar :" +isPalindrome("racecar"))
-console.log("uwu :" +isPalindrome("uwu"))
+console.log("rAceCaR :" +isPalindrome("rAceCaR"))
+console.log("Uwu :" +isPalindrome("Uwu"))
 console.log("joseph :" +isPalindrome("joseph"))
 console.log("enzo :" +isPalindrome("enzo"))
 console.log("3 :" + isPalindrome(3))
